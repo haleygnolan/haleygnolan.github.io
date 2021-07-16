@@ -19,7 +19,7 @@
 
 body {
   background-color: #22223b;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   color: #f2e9e4;
 }
@@ -27,7 +27,7 @@ body {
 .box1 {
   background-color: #4a4e69;
   background-attachment: scroll;
-  height: 10%;
+  height: auto;
   width: 100%;
   margin-top: 7%;
   text-align: center;
@@ -36,17 +36,20 @@ body {
 .box2 {
   background-color: #9a8c98;
   background-attachment: scroll;
-  height: 10%;
+  height: auto;
   width: 100%;
   margin-top: 0%;
+  text-align: center;
 }
 
 .box3 {
   background-color: #c9ada7;
   background-attachment: scroll;
-  height: 10%;
+  height: auto;
   width: 100%;
   margin-top: 0%;
+  padding-top: 16px;
+  text-align: center;
 }
 
 h1 {
@@ -56,8 +59,14 @@ h1 {
   color: #f2e9e4;
 }
 
+h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #22223b;
+  font-size: 15pt;
+}
+
 button {
-  font-family: 'Roboto Mono', monospace;
   border: 0px;
   padding: 0px;
   margin: 0px;
@@ -66,8 +75,52 @@ button {
 }
 
 a {
-  color: #9a8c98;
+  color: #f2e9e4;
   font-size: 25pt;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Roboto Mono', monospace;
+}
+
+input[type=email], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Roboto Mono', monospace;
+}
+
+input[type=submit] {
+  background-color: #9a8c98;
+  color: #f2e9e4;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #4a4e69;
 }
 
 </style>
@@ -77,11 +130,30 @@ a {
 <h1>HALEY NOLAN</h1>
 
 <div class="box1">
-Experience <button type="button"><i class="fas fa-chevron-circle-down"></i></button>
+<h2>EXPERIENCE</h2>
 </div>
 <div class="box2">
+<h2>PROJECTS</h2>
 </div>
 <div class="box3">
+<h2>CONTACT ME</h2>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name...">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email address...">
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
 </div>
 
 <!-- Personal Links -->
@@ -89,5 +161,6 @@ Experience <button type="button"><i class="fas fa-chevron-circle-down"></i></but
 <a href="https://www.linkedin.com/in/haleygnolan/"><i class="fab fa-linkedin"></i></a>&emsp;
 <a href="https://github.com/haleygnolan"><i class="fab fa-github-square"></i></a>
 </center>
+
 </body>
 </html>
