@@ -49,6 +49,12 @@ body {
   color: #f2e9e4;
 }
   
+/* Header */
+.header {
+  position: relative;
+  display: inline-block;
+}
+  
 /* Dropdown Menu */
 .dropbtn {
   background-color: #22223b;
@@ -69,11 +75,6 @@ body {
 .dropbtn:hover {
   background-color: #ada7ac;
   color: #22223b;
-}
-  
-.dropdown {
-  position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -296,20 +297,21 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<!-- Dropdown Menu -->
-<div class="dropdown">
+<!-- Main Header -->
+<div class="header">
+  <!-- Dropdown Menu -->
   <button class="dropbtn">Navigate <i class="fas fa-caret-down"></i></button>
   <div class="dropdown-content">
     <a href="#about" class="n1" style="top: 26px">About Me</a>
     <a href="#projects" class="n2" style="top: 46px">Projects</a>
     <a href="#contact" class="n3" style="top: 66px">Contact Me</a>
   </div>
-</div>
-  
-<!-- Resume Button -->
-<button class="resumebtn">Resume</button>
 
-<!-- Main Header -->
+  <!-- Resume Button -->
+  <button class="resumebtn">Resume</button>
+</div>
+
+<!-- Title -->
 <h1>HALEY NOLAN</h1>
 
 <!-- About Section -->
