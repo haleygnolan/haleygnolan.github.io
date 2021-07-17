@@ -129,10 +129,6 @@ figure {
 img {
   max-width: 100%;
 }
-  
-.image:hover .overlay {
-  opacity: 1;
-}
 
 figcaption {
   background-color: #9a8c98;
@@ -153,6 +149,14 @@ figcaption {
   transition: .5s ease;
   background-color: #008CBA;
 } 
+  
+.container {
+  max-width: 100%;
+}
+  
+.container:hover .overlay {
+  opacity: 1;
+}
   
 input[type=text], select, textarea {
   width: 90%;
@@ -219,14 +223,18 @@ input[type=submit]:hover {
 <p>Senior Capstone Projects</p></br>
 <div>
 <figure>
-    <img src="NolanSeniorProject.png" alt="Computer Science Senior Project" class="image">
+  <div class="container">
+    <img src="NolanSeniorProject.png" alt="Computer Science Senior Project">
     <div class="overlay">Hello</div>
     <figcaption>Computer Science Senior Project</figcaption>
+  </div>
 </figure>
 <figure>
-    <img src="NolanSeniorThesis.png" alt="Psychology Senior Thesis" class="image">
+  <div class="container">
+    <img src="NolanSeniorThesis.png" alt="Psychology Senior Thesis">
     <div class="overlay">Hello</div>
     <figcaption>Psychology Senior Thesis</figcaption>
+  </div>
 </figure></br>
 </div>
 </div>
