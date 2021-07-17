@@ -41,12 +41,52 @@ window.onload = function() {
   
 <style>
 
-/* Background and Defaults */
+/* General */
 body {
   background-color: #22223b;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   color: #f2e9e4;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+}
+  
+h1 {
+  font-weight: 200;
+  text-align: center;
+  margin-top: 7%;
+  color: #f2e9e4;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #22223b;
+  font-size: 15pt;
+  padding-top: 16px;
+}
+  
+h3 {
+  font-weight: 200;
+  text-align: center;
+  color: #f2e9e4;
+  font-size: 14pt;
+}
+
+button {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: #f2e9e4;
+  background-color: #4a4e69;
+}
+
+a {
+  color: #f2e9e4;
+  font-size: 25pt;
 }
   
 /* Dropdown Menu */
@@ -137,6 +177,7 @@ body {
   padding: 3px;
 }
   
+/* About Me Section */
 .box1 {
   background-color: #4a4e69;
   background-attachment: scroll;
@@ -145,7 +186,8 @@ body {
   margin-top: 7%;
   padding-bottom:16px;
 }
-  
+
+/* Projects Section */
 .box2 {
   background-color: #9a8c98;
   background-attachment: scroll;
@@ -156,6 +198,7 @@ body {
   padding-bottom: 16px;
 }
 
+/* Contact Me Section */
 .box3 {
   background-color: #c9ada7;
   background-attachment: scroll;
@@ -164,35 +207,8 @@ body {
   margin-top: 0%;
   text-align: center;
 }
-
-h1 {
-  font-weight: 200;
-  text-align: center;
-  margin-top: 7%;
-  color: #f2e9e4;
-}
-
-h2 {
-  font-weight: 400;
-  text-align: center;
-  color: #22223b;
-  font-size: 15pt;
-  padding-top: 16px;
-}
-
-button {
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  color: #f2e9e4;
-  background-color: #4a4e69;
-}
-
-a {
-  color: #f2e9e4;
-  font-size: 25pt;
-}
   
+/* List Items */
 dl {
   background-color: #f2e9e4;
   max-width: 60%;
@@ -207,7 +223,8 @@ dt {
 dd {
   font-family: 'Roboto', sans-serif;
 }
-  
+
+/* Figures and Images */
 figure {
   display: inline-block;
   max-width: 100%;
@@ -219,6 +236,14 @@ img {
   max-width: 100%;
 }
 
+.container {
+  max-width: 30%;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+  
 .overlay {
   position: absolute;
   top: 0;
@@ -232,14 +257,6 @@ img {
   background-color: #4a4e69;
 } 
   
-.container {
-  max-width: 30%;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-  
 .container:hover .overlay {
   opacity: 1;
 }
@@ -252,7 +269,9 @@ img {
   text-align: center;
   font-size: 12pt;
 }
+
   
+/* Contact Form */
 input[type=text], select, textarea {
   width: 90%;
   padding: 12px;
@@ -295,6 +314,7 @@ input[type=submit]:hover {
 
 </style>
 </head>
+ 
 <body>
 
 <!-- Dropdown Menu -->
@@ -316,8 +336,9 @@ input[type=submit]:hover {
 <!-- About Section -->
 <div class="box1" id="about">
 <h2>ABOUT ME</h2>
-<p style="text-align: center; font-family: 'Roboto Mono', monospace;">Hi! My name is Haley and I'm a recent college graduate seeking entry level positions in the computer science industry.</br>
-  Most of my experience is on the backend, but I love learning new languages and technologies! I've also explored UI/UX design and data analysis.</br></br>
+<h3>Hi! My name is Haley.</h3>
+<p style="text-align: center;">I'm a recent college graduate seeking entry level positions in the computer science industry.</br>
+  Most of my experience is on the backend, but I love learning new languages and technologies!</br></br>
   Here's a bit more about my background:</p>
 <dl>
   <dt>Education</dt>
