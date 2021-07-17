@@ -138,6 +138,11 @@ figcaption {
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -148,6 +153,7 @@ figcaption {
 .container {
   display: inline-block;
   max-width: 30%;
+  position: relative;
 }
   
 .container:hover .overlay {
@@ -219,18 +225,18 @@ input[type=submit]:hover {
 <p>Senior Capstone Projects</p></br>
 <div>
 <div class="container">
-  <div class="overlay">Hello</div>
   <figure>
     <img src="NolanSeniorProject.png" alt="Computer Science Senior Project">
     <figcaption>Computer Science Senior Project</figcaption>
   </figure>
+  <div class="overlay">Hello</div>
 </div>
 <div class="container">
-  <div class="overlay">Hello</div>
   <figure>
     <img src="NolanSeniorThesis.png" alt="Psychology Senior Thesis">
     <figcaption>Psychology Senior Thesis</figcaption>
   </figure>
+  <div class="overlay">Hello</div>
 </div>
 </div>
 </div>
@@ -238,7 +244,7 @@ input[type=submit]:hover {
 <!-- Contact Section -->
 <div class="box3">
 <h2>CONTACT ME</h2>
-<div class="container">
+<div>
   <form id="contact-form">
     <input type="hidden" name="contact_number">
     <input type="text" id="user_name" name="user_name" placeholder="Your name...">
