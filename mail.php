@@ -1,7 +1,8 @@
-<?php $name = $_POST['name'];
+<?php
+$name = $_POST['name'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
-$formcontent="From: $name \n Subject: $subject";
+$content = $_POST['content'];
+$formcontent="From: $name \n Subject: $content";
 $recipient = "haleynolan@protonmail.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
