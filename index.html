@@ -129,6 +129,10 @@ figure {
 img {
   max-width: 100%;
 }
+  
+img:hover .overlay {
+  opacity: 1;
+}
 
 figcaption {
   background-color: #9a8c98;
@@ -137,6 +141,19 @@ figcaption {
   font-family: 'Roboto', sans-serif;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} 
+  
 input[type=text], select, textarea {
   width: 90%;
   padding: 12px;
@@ -203,10 +220,12 @@ input[type=submit]:hover {
 <div>
 <figure>
     <img src="NolanSeniorProject.png" alt="Computer Science Senior Project">
+    <div class="overlay">Hello</div>
     <figcaption>Computer Science Senior Project</figcaption>
 </figure>
 <figure>
     <img src="NolanSeniorThesis.png" alt="Psychology Senior Thesis">
+    <div class="overlay">Hello</div>
     <figcaption>Psychology Senior Thesis</figcaption>
 </figure></br>
 </div>
