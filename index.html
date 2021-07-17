@@ -15,6 +15,28 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500">
 
+<!-- Scripts -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+  emailjs.init("user_JpRrnXcYD6BfYInnK5RXV");
+})();
+</script>
+<script type="text/javascript">
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    this.contact_number.value = Math.random() * 100000 | 0;
+    emailjs.sendForm('contact_service', 'contact_form', this)
+      .then(function() {
+        console.log('SUCCESS!');
+      }, function(error) {
+         console.log('FAILED...', error);
+      });
+  });
+}
+</script>
+  
 <style>
 
 body {
@@ -137,16 +159,12 @@ input[type=submit]:hover {
 <div class="box3">
 <h2>CONTACT ME</h2>
 <div class="container">
-  <form action="mail.php" method="post">
-
-    <input type="text" id="name" name="name" placeholder="Your name...">
-
-    <input type="email" id="email" name="email" placeholder="Your email address...">
-    
-    <textarea id="content" name="content" placeholder="Write something..." style="height:200px"></textarea></br>
-
-    <input type="submit" value="Send">
-
+  <form id="contact-form">
+    <input type="hidden" name="contact_number">
+    <input type="text" id="user_name" name="user_name" placeholder="Your name...">
+    <input type="email" id="user_email" name="user_email" placeholder="Your email address...">
+    <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea></br>
+    <input type="submit" value="Submit">
   </form>
 </div>
 
