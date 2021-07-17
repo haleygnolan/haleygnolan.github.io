@@ -79,11 +79,6 @@ a {
   font-size: 25pt;
 }
 
-label {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-
 input[type=text], select, textarea {
   width: 90%;
   padding: 12px;
@@ -141,13 +136,10 @@ input[type=submit]:hover {
 <div class="container">
   <form action="action_page.php">
 
-    <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name...">
 
-    <label for="email">Email</label>
     <input type="email" id="email" name="email" placeholder="Your email address...">
-
-    <label for="subject">Message</label>
+    
     <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
