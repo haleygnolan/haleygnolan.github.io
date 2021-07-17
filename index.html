@@ -71,10 +71,11 @@ body {
   color: #22223b;
 }
   
-.dropbtn:hover .dropdown-content {
-  display: block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-  
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -112,6 +113,10 @@ body {
 .dropdown-content a.n3:hover {
   background-color: #c9ada7;
   border-radius: 0px 0px 2px 2px;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Resume Button */
@@ -292,16 +297,19 @@ input[type=submit]:hover {
 <body>
 
 <!-- Dropdown Menu -->
-<button class="dropbtn">Navigate <i class="fas fa-caret-down"></i></button>
-<div class="dropdown-content">
-  <a href="#about" class="n1" style="top: 26px">About Me</a>
-  <a href="#projects" class="n2" style="top: 46px">Projects</a>
-  <a href="#contact" class="n3" style="top: 66px">Contact Me</a>
+<div class="dropdown" style="left: 0%">
+  <button class="dropbtn">Navigate <i class="fas fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a href="#about" class="n1" style="top: 26px">About Me</a>
+    <a href="#projects" class="n2" style="top: 46px">Projects</a>
+    <a href="#contact" class="n3" style="top: 66px">Contact Me</a>
+  </div>
 </div>
-
   
 <!-- Resume Button -->
-<button class="resumebtn">Resume</button>
+<div class="dropdown" style="left: 100%">
+  <button class="resumebtn">Resume</button>
+</div>
 
 <!-- Main Header -->
 <h1>HALEY NOLAN</h1>
