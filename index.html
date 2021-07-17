@@ -104,23 +104,12 @@ body {
   position: absolute;
 }
   
-.cover {
-  top: 20px;
-  height: 6px;
-  width: 108px;
-  display: none;
-  background-color: #4a4e69;
-  color: #4a4e69;
-  font-size: 6px;
-  position: absolute;
-}
-  
 .dropdown-content a.n1:hover {
   background-color: #4a4e69;
 }
   
-.dropdown-content a.n1:hover .cover {
-  display: block;
+.dropdown-content a.n1:hover .dropbtn {
+  border-radius: 5px 5px 0px 0px;
 }
   
 .dropdown-content a.n2:hover {
@@ -151,7 +140,6 @@ body {
   text-align: center;
   padding: 3px;
 }
-  
   
 .box1 {
   background-color: #4a4e69;
@@ -317,7 +305,6 @@ input[type=submit]:hover {
 <div class="dropdown">
   <button class="dropbtn">Navigate <i class="fas fa-caret-down"></i></button>
   <div class="dropdown-content">
-    <div class="cover"></div>
     <a href="#about" class="n1" style="top: 26px">About Me</a>
     <a href="#projects" class="n2" style="top: 46px">Projects</a>
     <a href="#contact" class="n3" style="top: 66px">Contact Me</a>
