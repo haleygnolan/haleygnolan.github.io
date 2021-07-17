@@ -71,10 +71,10 @@ body {
 
 .dropdown-content a {
   color: #f2e9e4;
-  padding: 12px 16px;
+  padding: 10px;
   display: block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   width: 120px;
 }
 
@@ -246,9 +246,9 @@ input[type=submit]:hover {
 <div class="dropdown">
   <button class="dropbtn"><i class="fas fa-bars"></i></button>
   <div class="dropdown-content">
-    <a id="box1" style=":hover {background-color: #4a4e69}">About Me</a>
-    <a id="box2" style=":hover {background-color: #9a8c98}">Projects</a>
-    <a id="box3" style=":hover {background-color: #c9ada7}">Contact Me</a>
+    <a href="#about" style="background-color: #4a4e69">About Me</a>
+    <a href="#projects" style="background-color: #9a8c98">Projects</a>
+    <a href="#contact" style="background-color: #c9ada7">Contact Me</a>
   </div>
 </div>
   
@@ -256,7 +256,7 @@ input[type=submit]:hover {
 <h1>HALEY NOLAN</h1>
 
 <!-- About Section -->
-<div class="box1">
+<div class="box1" id="about">
 <h2>ABOUT ME</h2>
 <p style="text-align: center">Hi! My name is Haley and I'm a recent college graduate looking for my future career.</br>Here's a little bit about my background:</p>
 <dl>
@@ -267,8 +267,8 @@ input[type=submit]:hover {
 </dl>
 </div>
   
-<!-- Project Section -->
-<div class="box2">
+<!-- Projects Section -->
+<div class="box2" id="projects">
 <h2>PROJECTS</h2>
 <p>Senior Capstone Projects</p></br>
 <div>
@@ -292,7 +292,7 @@ input[type=submit]:hover {
 </div>
   
 <!-- Contact Section -->
-<div class="box3">
+<div class="box3" id="contact">
 <h2>CONTACT ME</h2>
 <div>
   <form id="contact-form">
