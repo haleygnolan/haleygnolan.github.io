@@ -211,19 +211,20 @@ a {
   text-align: center;
 }
   
-/* List Items */
-dl {
-  background-color: #f2e9e4;
-  max-width: 60%;
-  margin: 16px auto;
-  color: #22223b;
+/* Tables */
+table {
+  width: 66%;
+  margin: auto;
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-weight: 400;
 }
   
-dt {
+th {
   font-family: 'Roboto Mono', monospace;
 }
   
-dd {
+td {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -343,12 +344,32 @@ input[type=submit]:hover {
 <p style="text-align: center;">I'm a recent college graduate seeking entry level positions in the computer science industry.</br>
   Most of my experience is on the backend, but I love learning new languages and technologies!</br></br>
   Here's a bit more about my background:</p>
-<dl>
-  <dt>Education</dt>
-  <dd>A.B. from Bryn Mawr College, Computer Science and Psychology</dd>
-  <dt>Experience</dt>
-  <dd>Staples Digital Solutions Intern, Jun 2019 - Aug 2019</dd>
-</dl>
+<table>
+  <tr>
+    <th colspan="2">Education</th>
+  </tr>
+  <tr>
+    <td>Bryn Mawr College</td>
+    <td>May 2021</td>
+  </tr>
+  <tr>
+    <td colspan="2">A.B. in Computer Science and Psychology</td>
+  </tr>
+  <tr>
+    <th colspan="2">Work Experience</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <th colspan="2">Leadership Experience</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+</table>
 </div>
   
 <!-- Projects Section -->
