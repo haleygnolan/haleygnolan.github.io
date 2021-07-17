@@ -59,12 +59,25 @@ body {
   position: absolute;
   top: 16px;
   left: 16px;
-  border: 1px #ada7ac solid;
-  border-radius: 5px;
   text-align: center;
   padding: 3px;
+  border: 1px #ada7ac solid;
+  border-radius: 5px;
 }
 
+.replace {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+  width: 110px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  text-align: center;
+  padding: 4px; 
+ }
+  
 .dropdown {
   position: relative;
   display: inline-block;
@@ -294,6 +307,7 @@ input[type=submit]:hover {
 <div class="dropdown">
   <button class="dropbtn">Navigate <i class="fas fa-caret-down"></i></button>
   <div class="dropdown-content">
+    <button class="replace">Navigate <i class="fas fa-caret-down"></i></button>
     <a href="#about" class="n1" style="top: 22px">About Me</a>
     <a href="#projects" class="n2" style="top: 42px">Projects</a>
     <a href="#contact" class="n3" style="top: 62px">Contact Me</a>
