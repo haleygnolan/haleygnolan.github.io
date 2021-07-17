@@ -56,6 +56,7 @@ body {
   font-size: 14px;
   border: none;
   padding: 16px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .dropdown {
@@ -79,12 +80,21 @@ body {
   margin: 4px;
 }
 
-.dropdown-content a:hover {
-  color: #22223b;
+.dropdown-content a.n1:hover {
+  color: #4a4e69;
+}
+  
+.dropdown-content a.n2:hover {
+  color: #9a8c98;
+}
+
+.dropdown-content a.n3:hover {
+  color: #c9ada7;
 }
   
 .dropdown:hover .dropdown-content {
   display: block;
+  background-color: #4a4e69;
 }
   
 .box1 {
@@ -251,9 +261,9 @@ input[type=submit]:hover {
 <div class="dropdown">
   <button class="dropbtn">Navigate <i class="fas fa-chevron-down"></i></button>
   <div class="dropdown-content">
-    <a href="#about" style="background-color: #4a4e69">About Me</a>
-    <a href="#projects" style="background-color: #9a8c98">Projects</a>
-    <a href="#contact" style="background-color: #c9ada7">Contact Me</a>
+    <a href="#about" class="n1">About Me</a>
+    <a href="#projects" class="n2">Projects</a>
+    <a href="#contact" class="n3">Contact Me</a>
   </div>
 </div>
   
