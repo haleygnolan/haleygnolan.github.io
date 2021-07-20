@@ -39,14 +39,13 @@ window.onload = function() {
 }
 </script>
 <script>
-  function toggle() {
-    var button = document.getElementById("workbutton");
-    if(button.innerHTML == "View Psychology") {
-      button.innerHTML = "View Computer Science";
+  function toggleText() {
+    if(document.getElementById("workbutton").innerHTML == "View Psychology") {
+      document.getElementById("workbutton").innerHTML = "View Computer Science";
       document.getElementById("cw1").innerHTML = "&#8211 PSYC 105: Introductory Psychology</br>&#8211 PSYC 205: Research Methods and Statistics</br>&#8211 PSYC 208: Social Psychology</br>&#8211 PSYC 209: Abnormal Psychology</br> &#8211 PSYC 212: Human Cognition</br>&#8211 PSYC 283: Lab in Developmental Psychology";
       document.getElementById("cw2").innerHTML = "&#8211 PSYC 284: Lab in Health Psychology</br>&#8211 PSYC 325: Judgement and Decision-Making</br>&#8211 PSYC 353: Advanced Topics in Clinical Psychology</br>&#8211 PSYC 375: Movies and Madness</br>&#8211 PSYC 400: Senior Thesis";
-    } else if(button.innerHTML == "View Computer Science") {
-      button.innerHTML = "View Psychology";
+    } else if(document.getElementById("workbutton").innerHTML == "View Computer Science") {
+      document.getElementById("workbutton").innerHTML = "View Psychology";
       document.getElementById("cw1").innerHTML = "&#8211 CMSC 113: Computer Science I</br>&#8211 CMSC 206: Intro to Data Structures</br>&#8211 CMSC 231: Discrete Mathematics</br>&#8211 CMSC 240: Computer Organization</br> &#8211 CMSC 245: Principles of Programming Languages</br>&#8211 CMSC 246: Systems Programming";
       document.getElementById("cw2").innerHTML = "&#8211 CMSC 311: Computer Security</br>&#8211 CMSC 325: Computational Linguistics</br>&#8211 CMSC 340: Analysis of Algorithms</br>&#8211 CMSC 345: Theory of Computation</br> &#8211 CMSC 380: Recent Advances - Science of Information</br>&#8211 CMSC 399: Senior Conference";
     }
@@ -382,7 +381,7 @@ input[type=submit]:hover {
     <td colspan="2" style="text-align: center">Major Coursework</td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align: center"><button id="workbutton" onclick="toggle()">View Psychology</button></td>
+    <td colspan="2" style="text-align: center"><button id="workbutton" onclick="toggleText()">View Psychology</button></td>
   </tr>
   <tr>
     <td id="cw1">&#8211 CMSC 113: Computer Science I</br>&#8211 CMSC 206: Intro to Data Structures</br>&#8211 CMSC 231: Discrete Mathematics</br>
