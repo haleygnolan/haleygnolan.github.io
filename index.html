@@ -43,12 +43,12 @@ window.onload = function() {
     var text = document.getElementById("workbutton").innerHTML;
     if(text == "View Psychology") {
       document.getElementById("workbutton").innerHTML = "View Computer Science";
-      document.getElementById("cw1").innerHTML = "&ndash PSYC 105: Introductory Psychology</br>&ndash PSYC 205: Research Methods and Statistics</br>&ndash PSYC 208: Social Psychology</br>&ndash PSYC 209: Abnormal Psychology</br> &ndash PSYC 212: Human Cognition</br>&ndash PSYC 283: Lab in Developmental Psychology";
-      document.getElementById("cw2").innerHTML = "&ndash PSYC 284: Lab in Health Psychology</br>&ndash PSYC 325: Judgement and Decision-Making</br>&ndash PSYC 353: Advanced Topics in Clinical Psychology</br>&ndash PSYC 375: Movies and Madness</br>&ndash PSYC 400: Senior Thesis";
+      document.getElementById("cw1").innerHTML = "&#8211 PSYC 105: Introductory Psychology</br>&#8211 PSYC 205: Research Methods and Statistics</br>&#8211 PSYC 208: Social Psychology</br>&#8211 PSYC 209: Abnormal Psychology</br> &#8211 PSYC 212: Human Cognition</br>&#8211 PSYC 283: Lab in Developmental Psychology";
+      document.getElementById("cw2").innerHTML = "&#8211 PSYC 284: Lab in Health Psychology</br>&#8211 PSYC 325: Judgement and Decision-Making</br>&#8211 PSYC 353: Advanced Topics in Clinical Psychology</br>&#8211 PSYC 375: Movies and Madness</br>&#8211 PSYC 400: Senior Thesis";
     } else if(text == "View Computer Science") {
       document.getElementById("workbutton").innerHTML = "View Psychology";
-      document.getElementById("cw1").innerHTML = "&ndash CMSC 113: Computer Science I</br>&ndash CMSC 206: Intro to Data Structures</br>&ndash CMSC 231: Discrete Mathematics</br>&ndash CMSC 240: Computer Organization</br> &ndash CMSC 245: Principles of Programming Languages</br>&ndash CMSC 246: Systems Programming";
-      document.getElementById("cw2").innerHTML = "&ndash CMSC 311: Computer Security</br>&ndash CMSC 325: Computational Linguistics</br>&ndash CMSC 340: Analysis of Algorithms</br>&ndash CMSC 345: Theory of Computation</br> &ndash CMSC 380: Recent Advances - Science of Information</br>&ndash CMSC 399: Senior Conference";
+      document.getElementById("cw1").innerHTML = "&#8211 CMSC 113: Computer Science I</br>&#8211 CMSC 206: Intro to Data Structures</br>&#8211 CMSC 231: Discrete Mathematics</br>&#8211 CMSC 240: Computer Organization</br> &#8211 CMSC 245: Principles of Programming Languages</br>&#8211 CMSC 246: Systems Programming";
+      document.getElementById("cw2").innerHTML = "&#8211 CMSC 311: Computer Security</br>&#8211 CMSC 325: Computational Linguistics</br>&#8211 CMSC 340: Analysis of Algorithms</br>&#8211 CMSC 345: Theory of Computation</br> &#8211 CMSC 380: Recent Advances - Science of Information</br>&#8211 CMSC 399: Senior Conference";
     }
 </script>
   
@@ -380,11 +380,15 @@ input[type=submit]:hover {
   </tr>
   <tr>
     <td colspan="2">Major Coursework</td>
+  </tr>
+  <tr>
     <td colspan="2"><button id="workbutton" type="button" onclick=toggleWork()>View Psychology</button></td>
-    <td id="cw1">&ndash CMSC 113: Computer Science I</br>&ndash CMSC 206: Intro to Data Structures</br>&ndash CMSC 231: Discrete Mathematics</br>
-      &ndash CMSC 240: Computer Organization</br> &ndash CMSC 245: Principles of Programming Languages</br>&ndash CMSC 246: Systems Programming</td>
-    <td id="cw2">&ndash CMSC 311: Computer Security</br>&ndash CMSC 325: Computational Linguistics</br>&ndash CMSC 340: Analysis of Algorithms</br>
-      &ndash CMSC 345: Theory of Computation</br> &ndash CMSC 380: Recent Advances - Science of Information</br>&ndash CMSC 399: Senior Conference</td>
+  </tr>
+  <tr>
+    <td id="cw1">&#8211 CMSC 113: Computer Science I</br>&#8211 CMSC 206: Intro to Data Structures</br>&#8211 CMSC 231: Discrete Mathematics</br>
+      &#8211 CMSC 240: Computer Organization</br> &#8211 CMSC 245: Principles of Programming Languages</br>&#8211 CMSC 246: Systems Programming</td>
+    <td id="cw2">&#8211 CMSC 311: Computer Security</br>&#8211 CMSC 325: Computational Linguistics</br>&#8211 CMSC 340: Analysis of Algorithms</br>
+      &#8211 CMSC 345: Theory of Computation</br> &#8211 CMSC 380: Recent Advances - Science of Information</br>&#8211 CMSC 399: Senior Conference</td>
   </tr>
   <tr>
     <th colspan="2">Work Experience</th>
