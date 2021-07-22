@@ -47,6 +47,9 @@ window.onload = function() {
     document.getElementById("cw1").innerHTML = "<b>PSYC 105:</b> Introductory Psychology</br><b>PSYC 205:</b> Research Methods and Statistics</br><b>PSYC 208:</b> Social Psychology</br><b>PSYC 209:</b> Abnormal Psychology</br><b>PSYC 212:</b> Human Cognition</br><b>PSYC 283:</b> Lab in Developmental Psychology";
     document.getElementById("cw2").innerHTML = "<b>PSYC 284:</b> Lab in Health Psychology</br><b>PSYC 325:</b> Judgement and Decision-Making</br><b>PSYC 353:</b> Advanced Topics in Clinical Psychology</br><b>PSYC 375:</b> Movies and Madness</br><b>PSYC 400:</b> Senior Thesis";
   }
+  function showList(id) {
+    document.getElementById(id).style.display = "block";
+  }
 </script>
   
 <style>
@@ -239,7 +242,6 @@ table {
 th {
   font-family: 'Roboto Mono', monospace;
   background-color: #22223b;
-  font-weight: 200;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -251,6 +253,15 @@ td {
   padding-bottom: 7px;
   padding-left: 14px;
   padding-right: 14px;
+}
+  
+/* Lists */
+  
+ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.2;
+  display: none;
 }
 
 /* Figures and Images */
@@ -408,12 +419,12 @@ input[type=submit]:hover {
     <th colspan="2">Leadership Experience</th>
   </tr>
   <tr>
-    <td>&emsp;Residence Council Head</td>
+    <td>&emsp;Residence Council Head<button onclick="showList(&quot;resco&quot;)"><i class="fas fa-chevron-down"></i></button></td>
     <td style="text-align: right">Fall 2020 &ndash; Spring 2021&emsp;</td>
   </tr>
   <tr>
     <td colspan="2">
-      <ul>
+      <ul id="resco">
         <li>Acted as co-head of the Bryn Mawr College Residence Council for the 2020-21 academic year</li>
         <li>Attended biweekly meetings with 10 administrative department heads (e.g., Facilities, Dining Services) to represent all residential students; communicated the needs of the student body to these departments</li>
         <li>Led biweekly Residence Council meetings with 18 Dorm Presidents to share information from Residential Life, understand the needs of the dorms, and discuss information from administrative departments</li>
@@ -422,12 +433,12 @@ input[type=submit]:hover {
     </td>
   </tr>
   <tr>
-    <td>&emsp;Dorm President</td>
+    <td>&emsp;Dorm President<button onclick="showList(&quot;dp&quot;)"><i class="fas fa-chevron-down"></i></button></td>
     <td style="text-align: right">Fall 2019 &ndash; Spring 2020&emsp;</td>
   </tr>
   <tr>
     <td colspan="2">
-      <ul>
+      <ul id="dp">
         <li>Served as co-president of Radnor Hall’s 72 residents for the 2019-20 academic year</li>
         <li>Organized meetings with the dorm leadership team and Residential Life; created and distributed agendas and meeting minutes</li>
         <li>Planned dorm events, including the annual Halloween party; completed the approval process with Residential Life, handled event budgets, and managed teams of bouncers for these events</li>
