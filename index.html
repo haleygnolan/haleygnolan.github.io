@@ -253,11 +253,13 @@ td {
   padding-right: 14px;
 }
   
-#inner table {
+.inner {
+  max-width: 30%;
   color: #f2e9e4;
   font-weight: 300;
   border: none;
   margin: auto;
+  display: inline-block;
 }
   
 /* Lists */
@@ -494,41 +496,39 @@ input[type=submit]:hover {
     <th colspan="2">Skills and Interests</th>
   </tr>
   <tr>
-    <td>
-      <table id="inner">
-        <td>
-          <center>Tools and Platforms</center>
-          <ul>
-            <li>IDEs including Eclipse, Android Studio, and Idle IDE</li>
-            <li>vi and Vim editors</li>
-            <li>GitHub for collaboration and version control</li>
-            <li>SPSS for statistical analysis</li>
-           <li>Microsoft Office Suite</li>
-            <li>G Suite</li>
-          </ul>
-        </td>
-        <td>
-          <center>Programming Languages</center>
-          <ul style="max-width: 150px; margin-left: auto; margin-right: auto;">
-            <li>Java&ensp;<span style="font-weight: 200">(advanced)</span></li>
-            <li>Python&ensp;<span style="font-weight: 200">(advanced)</span></li>
-            <li>C/C++&ensp;<span style="font-weight: 200">(advanced)</span></li>
-            <li>Go&ensp;<span style="font-weight: 200">(intermediate)</span></li>
-            <li>HTML/CSS&ensp;<span style="font-weight: 200">(basic)</span></li>
-            <li>JavaScript&ensp;<span style="font-weight: 200">(basic)</span></li>
-          </ul>
-        </td>
-        <td>
-          <center>Additional Skills</center>
-          <ul style="max-width: 400px; margin-left: auto; margin-right: auto;">
-            <li>Experience with Agile software development</li>
-            <li>Proficiency with the Linux command line and shell scripting</li>
-            <li>Enjoys debugging (to a degree)</li>
-            <li>Basic conversational knowledge of Spanish</li>
-            <li>Interested in guitar, sailing, curling, and mixology</li>
-          </ul>
-        </td>
-      </table>
+    <td colspan="2">
+      <div class="inner">
+        <center>Tools and Platforms</center>
+        <ul>
+          <li>IDEs including Eclipse, Android Studio, and Idle IDE</li>
+          <li>vi and Vim editors</li>
+          <li>GitHub for collaboration and version control</li>
+          <li>SPSS for statistical analysis</li>
+          <li>Microsoft Office Suite</li>
+          <li>G Suite</li>
+        </ul>
+      </div>
+      <div class="inner">
+        <center>Programming Languages</center>
+        <ul style="max-width: 150px; margin-left: auto; margin-right: auto;">
+          <li>Java&ensp;<span style="font-weight: 200">(advanced)</span></li>
+          <li>Python&ensp;<span style="font-weight: 200">(advanced)</span></li>
+          <li>C/C++&ensp;<span style="font-weight: 200">(advanced)</span></li>
+          <li>Go&ensp;<span style="font-weight: 200">(intermediate)</span></li>
+          <li>HTML/CSS&ensp;<span style="font-weight: 200">(basic)</span></li>
+          <li>JavaScript&ensp;<span style="font-weight: 200">(basic)</span></li>
+        </ul>
+      </div>
+      <div class="inner">
+        <center>Additional Skills</center>
+        <ul style="max-width: 400px; margin-left: auto; margin-right: auto;">
+          <li>Experience with Agile software development</li>
+          <li>Proficiency with the Linux command line and shell scripting</li>
+          <li>Enjoys debugging (to a degree)</li>
+          <li>Basic conversational knowledge of Spanish</li>
+          <li>Interested in guitar, sailing, curling, and mixology</li>
+        </ul>
+      </div>
     </td>
   </tr>
 </table>
